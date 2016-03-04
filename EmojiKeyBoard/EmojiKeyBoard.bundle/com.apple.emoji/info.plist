@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>id</key>
+	<string>com.apple.emoji</string>
+	<key>emojis</key>
+	<array>
+		<dict>
+			<key>code</key>
+			<string>0x1f603</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f60d</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f612</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f633</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f601</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f618</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f609</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f620</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f61e</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f625</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f62d</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f61d</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f621</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f623</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f614</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f604</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f637</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f61a</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f613</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f602</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f60a</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f622</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f61c</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f628</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f630</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f632</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f60f</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f631</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f62a</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f616</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f60c</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f47f</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f47b</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f385</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f467</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f466</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f469</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f468</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f436</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f431</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f44d</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f44e</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f44a</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x270a</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x270c</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f4aa</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f44f</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f448</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f446</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f449</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f447</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f44c</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x2764</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f494</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f64f</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x2600</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f319</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f31f</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x26a1</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x2601</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x2614</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f341</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f33b</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f343</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f457</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f380</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f444</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f339</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x2615</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f382</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f559</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f37a</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f50d</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f4f1</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f3e0</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f697</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f381</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x26bd</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f4a3</string>
+			
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>0x1f48e</string>
+			
+		</dict>
+	</array>
+</dict>
+</plist>

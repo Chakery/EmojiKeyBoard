@@ -18,6 +18,11 @@
 		83F70FB31C87D235001339A7 /* EmojiPackageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F70FB21C87D235001339A7 /* EmojiPackageManager.swift */; };
 		83F70FB51C87E2CD001339A7 /* EmojiKeyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F70FB41C87E2CD001339A7 /* EmojiKeyBoardView.swift */; };
 		83F70FB71C880F51001339A7 /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F70FB61C880F51001339A7 /* EmojiCollectionViewCell.swift */; };
+		83FA80711C8A7E2D00EBD83D /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA80701C8A7E2D00EBD83D /* UITextViewExtension.swift */; };
+		83FA80741C8A892100EBD83D /* EmojiTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA80731C8A892100EBD83D /* EmojiTextAttachment.swift */; };
+		83FA80761C8A8B5F00EBD83D /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA80751C8A8B5F00EBD83D /* NSAttributedStringExtension.swift */; };
+		83FA80781C8ABF1400EBD83D /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA80771C8ABF1400EBD83D /* UILabelExtension.swift */; };
+		83FA807A1C8AC06700EBD83D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA80791C8AC06700EBD83D /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		83F70FB21C87D235001339A7 /* EmojiPackageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPackageManager.swift; sourceTree = "<group>"; };
 		83F70FB41C87E2CD001339A7 /* EmojiKeyBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiKeyBoardView.swift; sourceTree = "<group>"; };
 		83F70FB61C880F51001339A7 /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
+		83FA80701C8A7E2D00EBD83D /* UITextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		83FA80731C8A892100EBD83D /* EmojiTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextAttachment.swift; sourceTree = "<group>"; };
+		83FA80751C8A8B5F00EBD83D /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
+		83FA80771C8ABF1400EBD83D /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		83FA80791C8AC06700EBD83D /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 		83F70FAD1C87CA30001339A7 /* EmojiKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				83FA80721C8A88E600EBD83D /* Extension */,
 				83F70FAE1C87CA48001339A7 /* EmojiKeyBoard.bundle */,
 				83F70FB01C87CB92001339A7 /* Emoji.swift */,
 				8329E2491C898EEE0078C2CA /* EmojiLayout.swift */,
@@ -88,6 +99,18 @@
 				83F70FB41C87E2CD001339A7 /* EmojiKeyBoardView.swift */,
 			);
 			path = EmojiKeyBoard;
+			sourceTree = "<group>";
+		};
+		83FA80721C8A88E600EBD83D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				83FA80701C8A7E2D00EBD83D /* UITextViewExtension.swift */,
+				83FA80731C8A892100EBD83D /* EmojiTextAttachment.swift */,
+				83FA80751C8A8B5F00EBD83D /* NSAttributedStringExtension.swift */,
+				83FA80771C8ABF1400EBD83D /* UILabelExtension.swift */,
+				83FA80791C8AC06700EBD83D /* StringExtension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +189,14 @@
 				83F70FB71C880F51001339A7 /* EmojiCollectionViewCell.swift in Sources */,
 				83F70F9C1C87CA0C001339A7 /* AppDelegate.swift in Sources */,
 				8329E24A1C898EEE0078C2CA /* EmojiLayout.swift in Sources */,
+				83FA80741C8A892100EBD83D /* EmojiTextAttachment.swift in Sources */,
+				83FA80761C8A8B5F00EBD83D /* NSAttributedStringExtension.swift in Sources */,
 				83F70FB11C87CB92001339A7 /* Emoji.swift in Sources */,
 				83F70FB31C87D235001339A7 /* EmojiPackageManager.swift in Sources */,
+				83FA807A1C8AC06700EBD83D /* StringExtension.swift in Sources */,
 				83F70FB51C87E2CD001339A7 /* EmojiKeyBoardView.swift in Sources */,
+				83FA80781C8ABF1400EBD83D /* UILabelExtension.swift in Sources */,
+				83FA80711C8A7E2D00EBD83D /* UITextViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

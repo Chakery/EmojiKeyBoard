@@ -50,7 +50,7 @@ class EmojiKeyBoardView: UIView {
 
 	private func didInit() {
 		dispatch_async(dispatch_get_global_queue(0, 0)) { [unowned self] _ in
-			self.datasource = EmojiPackageManager.loadPackages()
+			self.datasource = EmojiPackageManager.loadPackages
 			// 处理数据源, 插入删除按钮
 			for var i = 0; i < self.datasource!.count; i += 1 {
 				let emojis = self.addDeleteButtonToDatasource(self.datasource![i].id, datasource: self.datasource![i].emojis!)
@@ -78,8 +78,8 @@ class EmojiKeyBoardView: UIView {
 		collectionView.pagingEnabled = true
 		collectionView.delegate = self
 		collectionView.dataSource = self
-        collectionView.showsHorizontalScrollIndicator = false
-        collectionView.showsVerticalScrollIndicator = false
+		collectionView.showsHorizontalScrollIndicator = false
+		collectionView.showsVerticalScrollIndicator = false
 		collectionView.registerClass(EmojiCollectionViewCell.self, forCellWithReuseIdentifier: identifier)
 		addSubview(collectionView)
 
@@ -155,7 +155,7 @@ class EmojiKeyBoardView: UIView {
 // MARK: - UICollectionViewDataSource
 extension EmojiKeyBoardView: UICollectionViewDataSource, UICollectionViewDelegate {
 	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let index = indexPath.section * Int(column * row) + indexPath.row
+		let index = indexPath.section * Int(column * row) + indexPath.row
 		emojiHandle?(emojiKeyBoardView: self, emoji: currentEmojis![index])
 	}
 

@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Chakery. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 ///  @brief 表情模型
 struct EmojiModel {
@@ -16,8 +16,8 @@ struct EmojiModel {
 	var gif: String? // Gif表情名称
 	var png: String? // Png表情名称
 	var code: String? // 表情十六进制编码
-	var gifPath: String? // gif图片路径
-	var pngPath: String? // png图片路径
+	var gifImage: UIImage? // gif图片路径
+	var pngImage: UIImage? // png图片路径
 	var emoji: String? // 表情
 	var deleteBtn: Bool // false: 表情 | true: 删除按钮
 
@@ -31,10 +31,13 @@ struct EmojiModel {
 		self.deleteBtn = deleteBtn
 
 		if let png = self.png {
-			self.pngPath = "EmojiKeyBoard.bundle/\(id!)/\(png)"
+			self.pngImage = UIImage(named: "EmojiKeyBoard.bundle/\(id!)/\(png)")
 		}
 		if let gif = self.gif {
-			self.gifPath = "EmojiKeyBoard.bundle/\(id!)/\(gif)"
+			self.gifImage = UIImage(named: "EmojiKeyBoard.bundle/\(id!)/\(gif)")
+		}
+		if deleteBtn {
+			self.pngImage = UIImage(named: "EmojiKeyBoard.bundle/delete.png")
 		}
 		if let code = self.code {
 			let scanner = NSScanner(string: code)
@@ -42,9 +45,6 @@ struct EmojiModel {
 			scanner.scanHexInt(&result)
 			let chat = Character(UnicodeScalar(result))
 			emoji = "\(chat)"
-		}
-		if deleteBtn {
-			self.pngPath = "EmojiKeyBoard.bundle/delete.png"
 		}
 	}
 }

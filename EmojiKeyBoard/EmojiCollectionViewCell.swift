@@ -35,12 +35,12 @@ class EmojiCollectionViewCell: UICollectionViewCell {
 	private func bindEmojiCollectionViewCell() {
 		guard let _ = emojiModel else { return }
 		// png 表情
-		if let pngPath = emojiModel!.pngPath {
-			emojiButton.setImage(UIImage(named: pngPath), forState: .Normal)
+		if let pngImage = emojiModel!.pngImage {
+			emojiButton.setImage(pngImage, forState: .Normal)
 		} else {
 			emojiButton.setImage(nil, forState: .Normal)
 		}
-		// gif 表情
+		// text 表情
 		if let emoji = emojiModel!.emoji {
 			emojiButton.setTitle(emoji, forState: .Normal)
 		} else {
@@ -48,7 +48,7 @@ class EmojiCollectionViewCell: UICollectionViewCell {
 		}
 		// 删除按钮
 		if emojiModel!.deleteBtn {
-			emojiButton.setImage(UIImage(named: emojiModel!.pngPath!), forState: .Normal)
+			emojiButton.setImage(emojiModel!.pngImage, forState: .Normal)
 		}
 	}
 

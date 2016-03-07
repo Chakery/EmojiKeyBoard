@@ -37,6 +37,7 @@ class EmojiKeyBoardView: UIView {
 	private var datasource: [EmojiPackageModel]? // 数据源
 	private var currentEmojis: [EmojiModel]? // 当前显示的表情页面
 	private var emojiHandle: block? // 回调
+	private var tempButton: UIButton? // 保存当前被点击的按钮
 
 	init() {
 		super.init(frame: CGRect(x: 0, y: mainRect.height - keyBoardHeight - toolViewHeight, width: mainRect.width, height: keyBoardHeight + toolViewHeight))
@@ -88,6 +89,7 @@ class EmojiKeyBoardView: UIView {
 		addSubview(toolView)
 	}
 
+	/// 工具栏按钮
 	private func setupToolView() {
 		for var i = 0; i < datasource!.count; i += 1 {
 			let button = UIButton(frame: CGRect(x: CGFloat(i) * toolButtonWidth, y: 0, width: toolButtonWidth, height: toolViewHeight))
@@ -97,10 +99,13 @@ class EmojiKeyBoardView: UIView {
 			button.addTarget(self, action: "toolButtonDidSelected:", forControlEvents: .TouchUpInside)
 			toolView.addSubview(button)
 		}
+		let button = toolView.viewWithTag(1000) as! UIButton
+		changeButtonStatus(button)
 	}
 
 	/// 工具栏按钮点击事件(切换表情包)
 	@objc private func toolButtonDidSelected(button: UIButton) {
+		changeButtonStatus(button)
 		let index = button.tag % 1000
 		currentEmojis = datasource![index].emojis!
 		if let _ = currentEmojis {
@@ -149,6 +154,17 @@ class EmojiKeyBoardView: UIView {
 			return Int(column * row) - (current - count)
 		}
 		return Int(column * row)
+	}
+
+	/// 改变按钮的选中状态
+	///
+	/// - parameter button: 按钮
+	private func changeButtonStatus(button: UIButton) {
+		if let tempButton = tempButton {
+			tempButton.backgroundColor = UIColor.clearColor()
+		}
+		tempButton = button
+		button.backgroundColor = UIColor.grayColor()
 	}
 }
 

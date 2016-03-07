@@ -12,6 +12,8 @@ import UIKit
 
 class ViewController: UIViewController {
 	@IBOutlet weak var textView: UITextView!
+	@IBOutlet weak var strLabel: UILabel!
+	@IBOutlet weak var emojiLabel: UILabel!
 	private var oldRect: CGRect!
 	private var emojiView: EmojiKeyBoardView!
 	private var isShow: Bool = false
@@ -27,8 +29,6 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// 文本域
-		textView.font = UIFont.systemFontOfSize(18)
 
 		// 表情键盘
 		emojiView = EmojiKeyBoardView()
@@ -38,15 +38,22 @@ class ViewController: UIViewController {
 		view.addSubview(emojiView)
 	}
 
-	// 转换成字符串
+	// MARK: - 转换成字符串
 	@IBAction func changeEmojiToString(sender: AnyObject) {
-		print(textView.emojiText())
+		strLabel.text = textView.emojiText()
 	}
 
-	// 显示表情键盘
+	// MARK: - 显示表情键盘
 	@IBAction func showEmojiKeyBoard(sender: AnyObject) {
 		view.endEditing(true)
 		emojiKeyBoardAnimate()
+	}
+
+	// MARK: - 字符串转换表情
+	@IBAction func changeStrToEmoji(sender: AnyObject) {
+		if let text = strLabel.text {
+			emojiLabel.setEmojiText(text)
+		}
 	}
 
 	// 键盘显示时回调

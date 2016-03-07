@@ -57,7 +57,7 @@ class EmojiPackageManager {
 			guard let emojis = package.emojis else { continue }
 			for item in emojis {
 				guard let chs = item.chs else { continue }
-				if chs == "[\(string)]" {
+				if chs == string {
 					return item
 				}
 			}
